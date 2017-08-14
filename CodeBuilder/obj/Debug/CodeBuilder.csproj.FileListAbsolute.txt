@@ -1,0 +1,6 @@
+c:\users\jonno\documents\visual studio 2017\Projects\CodeBuilder\CodeBuilder\bin\Debug\CodeBuilder.exe.config
+c:\users\jonno\documents\visual studio 2017\Projects\CodeBuilder\CodeBuilder\bin\Debug\CodeBuilder.exe
+c:\users\jonno\documents\visual studio 2017\Projects\CodeBuilder\CodeBuilder\bin\Debug\CodeBuilder.pdb
+c:\users\jonno\documents\visual studio 2017\Projects\CodeBuilder\CodeBuilder\obj\Debug\CodeBuilder.csprojResolveAssemblyReference.cache
+c:\users\jonno\documents\visual studio 2017\Projects\CodeBuilder\CodeBuilder\obj\Debug\CodeBuilder.exe
+c:\users\jonno\documents\visual studio 2017\Projects\CodeBuilder\CodeBuilder\obj\Debug\CodeBuilder.pdb
