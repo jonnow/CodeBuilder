@@ -9,7 +9,7 @@ namespace CodeBuilder
 {
     class Program
     {
-        const string versionNumber = "0.1";
+        const string versionNumber = "1.0";
         const int MAX_ROWS = 100;
 
         static void Main(string[] args)
@@ -19,11 +19,24 @@ namespace CodeBuilder
             int count = 0;
             Row[] Rows = new Row[MAX_ROWS];
 
-            Console.WriteLine("Welcome to the YTU Code Builder v" + versionNumber + "!");
-            Console.WriteLine("Please enter the .txt file name that contains the list of questions for adding a participant:");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("__  __________  __   ______          __        ____        _ __    __         ");
+            Console.WriteLine("\\ \\/ /_  __/ / / /  / ____/___  ____/ /__     / __ )__  __(_) /___/ /__  _____");
+            Console.WriteLine(" \\  / / / / / / /  / /   / __ \\/ __  / _ \\   / __  / / / / / / __  / _ \\/ ___/");
+            Console.WriteLine(" / / / / / /_/ /  / /___/ /_/ / /_/ /  __/  / /_/ / /_/ / / / /_/ /  __/ /    ");
+            Console.WriteLine("/_/ /_/  \\____/   \\____/\\____/\\__,_/\\___/  /_____/\\__,_/_/_/\\__,_/\\___/_/     ");
+            Console.WriteLine("                                                                              ");
 
-            //fileName = Console.ReadLine();
-            fileName = "test";
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("Welcome to the YTU Code Builder v" + versionNumber + "!\n");
+            Console.WriteLine("Please ensure your txt file is in the following format: ");
+            Console.WriteLine("\t- Name, type, required, customValidator");
+            Console.WriteLine("\t  (Name can be anything you want, type must be a textbox or dropdownlist)");
+            Console.WriteLine("\t- One question entry per line");
+            Console.WriteLine("\t- Line items seperated with a comma");
+            Console.WriteLine("\nPlease enter the .txt file name that contains the list of questions for adding a participant:");
+
+            fileName = Console.ReadLine();
             // Add the extension if it hasn't got one
             if (fileName.IndexOf(".") <= 0)
             {
@@ -175,7 +188,7 @@ namespace CodeBuilder
                 Console.WriteLine("File could not be found!");
             }
 
-
+            Console.WriteLine("\n\nBuilding complete!\n\nPress any key to continue.");
 
             Console.ReadKey();
         }
